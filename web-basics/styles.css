@@ -1,0 +1,38 @@
+body{
+    /* background-color: black; */
+}
+
+.intro-area{
+    background-color: #ffffff;
+}
+
+.intro-text{
+    text-align: left;
+    margin-left: 20px;
+    float: left;
+}
+
+.intro-image{
+    margin-top: 20px;
+    text-align: right;
+    float :right;
+    /* clear: both; */
+}
+
+.intro-link{
+    clear: both;
+    text-align: center;
+}
+
+.intro-link >  a {
+    text-decoration: none;
+    color : red;
+}
+
+.intro-link > a:hover{
+    color: blue;
+}
+
+.gdg-table{
+    border: 10px solid red;
+}
