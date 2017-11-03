@@ -14,6 +14,11 @@ To set things up on your local machine, it is assumed you have [Node](https://no
 git clone https://github.com/GDGLegon/code-lab.git
 ```
 
+### Install Angular (Optional)
+```sh
+npm -g install @angular/cli
+```
+
 ### Install Project Dependencies
 ```sh
 cd code-lab/demo-app
