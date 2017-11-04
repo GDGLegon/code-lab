@@ -8,28 +8,28 @@ export class TodoService {
   private nextId: number;
 
   constructor() {
-    this.todos =[
-      new Todo(0, "Write a parser!"),
-      new Todo(1, "Refactor Code :("),
-      new Todo(2, "Attend GDGDevFest Accra!"),
-    ]
+    this.todos = [
+      new Todo(0, 'Write a parser!'),
+      new Todo(1, 'Refactor Code :('),
+      new Todo(2, 'Attend GDGDevFest Accra!'),
+    ];
 
     this.nextId = 3;
 
   }
 
-  public addTodo(text:string) : void {
-    let todo = new Todo(this.nextId, text);
+  public addTodo(text: string): void {
+    const todo = new Todo(this.nextId, text);
     this.todos.push(todo);
     this.nextId++;
   }
 
-  public getTodos(): Todo[]{
+  public getTodos(): Todo[] {
     return this.todos;
   }
 
-  public removeTodo( id:number): void{
-    this.todos = this.todos.filter( (todo) => todo.id != id);
+  public removeTodo( id: number): void {
+    this.todos = this.todos.filter( (todo) => todo.id !== id);
   }
 
 }
